@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heroPage</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <!---------------------------------- Header session Start Here ------------------------------------------------>
+    <!---------------------------------- Below code is used to create the Header ---------------------------------->
+    <header class="header" id="header">
+        <!-- Below code is used to create a navmenu -->
+        <nav class="navBar container">
+            <!-- Below code is used to create a menu bar -->
+            <div class="menu" id="menu">
+                <!-- Below code is used to create a logo div -->
+                <div class="logo">
+                    <img src="src/img/logo.svg" alt="Logo">
+                </div>
+                <!-- Below code is used to create a Ul element -->
+                <ul class="list">
+                    <!-- Below code is used to create Li element -->
+                    <li class="list-items">
+                        <a href="#" class="list-link">Features
+                            <img src="src/img/angle-down.svg" alt="" width="10px">
+                        </a>
+                    </li>
+                    <li class="list-items">
+                        <a href="#" class="list-link">Company
+                            <img src="src/img/angle-down.svg" alt="" width="10px">
+                        </a>
+                    </li>
+                    <li class="list-items">
+                        <a href="#" class="list-link">Careers</a>
+                    </li>
+                    <li class="list-items">
+                        <a href="#" class="list-link">About</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End of menuBar -->
+
+            <!-- Below code is used to create a right-hand-side icons and Mobile navBar -->
+            <!-- Below code is used to create mobile navigation -->
+            <!-- Mobile nav Start here -->
+            <div class="right-icon navMobile">
+                <!-- Below code is used to navigate thru checked box -->
+                <input type="checkbox" name="" id="sideBar-active">
+                <!-- OpenNavBar Start Here -->
+                <label for="sideBar-active" class="openSideBar">
+                    <img src="src/img/list.svg" alt="Menu-Icon" width="32px">
+                </label>
+                <!-- OpenNavBar End Here -->
+                <!-- Below code is the overlay -->
+                <label for="sideBar-active" id="overlay"></label>
+
+                <!-- CloseNavBar Start Here -->
+                <div class="links-container">
+                    <label for="sideBar-active" class="closeSideBar">
+                        <img src="src/img/x.svg" alt="Close-Icon" width="32px">
+                    </label>
+                    <!-- Below code is the Mobile SMall Screen Menu -->
+                    <!-- MobileMenu Start Here -->
+                    <div class="mobileMenu">
+                        <a href="#" class="list-link">Features
+                            <img src="src/img/angle-down.svg" alt="" width="10px">
+                        </a>
+                        <a href="#" class="list-link">Company
+                            <img src="src/img/angle-down.svg" alt="" width="10px">
+                        </a>
+                        <a href="#" class="list-link">Careers</a>
+                        <a href="#" class="list-link">About</a>
+                        <a href="register.html" class="list-link">Login</a>
+                        <a href="register.html" class="list-link">Register</a>
+                    </div>
+                    <!-- MobileMenu End Here -->
+                </div>
+                <!-- CloseNavBar End Here -->
+                
+                <a href="register.html" class="login">Login</a>
+                <a href="register.html" class="register">Register</a>
+
+            </div>
+            <!-- Mobile nav End here -->
+
+        </nav>
+        <!-- End of navBar -->
+
+    </header>
+    <!---------------------------------- Header session End Here -------------------------------------------------->
+
+    <!---------------------------------- Home section Start Here -------------------------------------------------->
+    <section class="hero">
+        <!-- <div class="heroImg2 smScreen">
+            <img src="img/image-hero-mobile.png" alt="" class="heroImg-smcreen smScreen">
+        </div> -->
+        <!-- Hero Content Start Here -->
+
+        <!-- Below code is used to create heroWrapper -->
+        <div class="heroWrapper">
+            <div class="heroContent">
+                <div class="content">
+                    <h1>Make remote work </h1>
+                    <p> Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                </div>
+                <button>Learn more</button>
+
+                <!-- Below code is used to Advert -->
+                <!-- Advert Start Here -->
+                <div class="advert">
+                    <div class="advertImg">
+                        <img src="src/img/client-databiz.svg" class="ad-img" alt="Adert Image1">
+                    </div>
+                    <div class="advertImg">
+                        <img src="src/img/client-audiophile.svg" class="ad-img" alt="Adert Image2">
+                    </div>
+                    <div class="advertImg">
+                        <img src="src/img/client-meet.svg" class="ad-img" alt="Adert Image3">
+                    </div>
+                    <div class="advertImg">
+                        <img src="src/img/client-maker.svg" class="ad-img" alt="Adert Image4">
+                    </div>
+                </div>
+                <!-- Advert End Here -->
+            </div>
+            <!-- Hero Content End Here -->
+            <!-- Hero Image Start Here -->
+            <div class="heroImg1 lgScreen">
+                <img src="src/img/image-hero-desktop.png" alt="Desktop Image" class="lgheroImg" >
+                <img src="src/img/image-hero-mobile.png" alt="Mobile Image" class="smheroImg">
+                        
+            </div>
+            <!-- Hero Image End Here -->
+        </div>
+    </section>
+    <!---------------------------------- Home section End Here ----------------------------------------------------->
+    
+
+  
+</body>
+</html>

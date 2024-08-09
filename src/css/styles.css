@@ -1,0 +1,680 @@
+/* SAIL ASSESSMENT ASSIGNMENT 3 */
+/* CSS SYTLESHEET FOR THE HERO PAGE */
+/* Below code is used to style the CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+/* Below code is user-define function */
+:root{
+    --white: hsl(0, 0%, 98%);
+    --grayColor: hsl(0, 0%, 41%);
+    --blackColor: hsl(0, 0%, 8%);
+    --mobileColorRed: hsl(0, 100%, 74%);
+    --mobileColorGreen: hsl(154, 59%, 51%);
+    --mobileColorBlue: hsl(248, 32%, 49%);
+    --mobileColorDarkBlue: hsl(249, 10%, 26%);
+    --mobileColorGrayBlue:hsl(246, 25%, 77%);
+}
+/* End of User-define Function */
+
+/* Below code is used to style the html */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: url("src/font/Epilogue (1)/static/Epilogue-BlackItalic.ttf"), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Below code is used to set the section element */
+section{
+    padding: 3rem 1%;
+}
+
+/* Below code is used to syle the small Hero Image */
+.smheroImg{
+    display: none;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+.list {
+    list-style: none;
+}
+
+/* Below code is used to style the body of the html */
+body{
+    background-color: var(--white);
+}
+
+/* Below code is used to style the header */
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000px;
+    background-color: var(--white);
+    padding: 2rem 3%;
+    margin-bottom: 10px;
+    font-family: 'epilogue', 'Segoe UI';
+}
+
+/* Below code is used to style the container class */
+.container {
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    align-items: center;
+    font-family: 'epilogue', 'Segoe UI';
+}
+
+/* Below code is used to style everything inside the navbar */
+.navBar, .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+}
+
+/* Below code is used to style the menu div */
+.navBar .menu {
+    transition: .6s ease-in;
+    background-color: var(--white);
+}
+
+/* Below code is used to style the logo div element */
+.logo{
+    margin-right: 50px;
+}
+
+/* Below code is used to style the ul element */
+.menu .list {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+    background-color: var(--white);
+}
+
+/* Below code is used to style the il element inside the ul element */
+.list .list-link {
+    margin: 0 2rem;
+    font-size: 2rem;
+    color: var(--grayColor);
+    background-color: var(--white);
+}
+
+/* Below code is used to style the hover element */
+.list .list-link:hover {
+    color: var(--mobileColorGreen);
+    transition:  .6s;
+    transform: scale(1.2);
+}
+
+/* Below code is used to style the icon to the right */
+.right-icon{
+    justify-content: right;
+    align-items: center;
+}
+
+/* Below code is used to style the login a element  */
+.login{
+    padding-right: 30px;
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+    font-size: 2rem;
+
+    &:hover{
+        color: var(--mobileColorGreen);
+        transition:  .6s;
+        transform: scale(1.2);
+    }
+}
+
+/* Below code is used to style the register a element */
+.register{
+    background-color:hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    border-radius: 10px;
+    border: 2px solid hsl(0, 0%, 8%);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 2rem;
+
+    &:hover{
+        color: var(--white);
+        background-color: var(--mobileColorGreen);
+        border: none;
+        transition: .4s;
+        transform: scale(1.2);
+    }
+}
+
+/* Below code is used to style the login/register form */
+/* form styles start here */
+.registerBody{
+    background: url("../img/bg-intro-desktop.png"),hsl(0, 100%, 74%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+}
+.registerForm {
+    /* display: flex;
+    background: url("../img/bg-intro-desktop.png"),hsl(0, 100%, 74%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 11%;
+    align-items: center;
+    padding: 70px;
+    font-family: 'epilogue', 'Segoe UI';
+
+    /* &.activate {
+        right: 2rem;
+        transition: .4s ease-in-out;
+    } */
+
+    .form-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr ));
+        gap: 1.5rem;
+        margin-bottom: 40px;
+        font-family: 'epilogue', 'Segoe UI';
+        justify-content: center;
+        align-items: center;
+    }
+    .formContent{
+        padding: 20px;
+        margin-right: 20px;
+
+        h1{
+            font-size: 4rem;
+            color:  hsl(0, 0%, 98%);
+            margin-bottom: 20px;
+        }
+
+        p{
+            color:hsl(0, 0%, 98%);
+            text-align: left;
+            text-wrap: wrap;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+
+    .formDetails {
+        .formHeader .form-bonus{
+            background-color: hsl(248, 32%, 49%);
+            color: hsl(0, 0%, 98%);
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow:  0 0 10px hsl(0, 0%, 41%);
+            height: 50px;
+            font-size: 16px;
+
+            .bonus{
+                font-weight: bolder; ;
+            }
+        }
+
+        form{
+            background-color: hsl(0, 0%, 98%);
+            width: 100%;
+            height: 100%;
+            display: block;
+            padding: 35px;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+            
+
+            input, button{
+                width: 100%;
+                height: 50px;
+                margin: 10px;
+                padding-left: 20px;
+                border-radius: 5px;
+                color:  hsl(0, 0%, 41%);
+                border: 0.5px solid  hsl(0, 0%, 41%);
+            }
+
+            button{
+                background-color: hsl(154, 59%, 51%);
+                color: hsl(0, 0%, 98%);
+                text-transform: uppercase;
+                cursor: pointer;
+                transition:  .6s;
+            }
+
+            p{
+                color: hsl(0, 0%, 41%);
+                font-size: 10px;
+                text-align: center;
+
+                span{
+                    color: hsl(0, 100%, 74%) ;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+/* form styles end here */
+
+/* Below code is used to style the mobile navBar */
+/* Mobile navBar Start Here */
+.navMobile{
+    height: 60px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .links-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navMobile {
+        .mobileMenu{
+            display: flex;
+            flex-direction: column;
+        
+            a{
+                height: 100px;
+                padding: 0 20px;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: var(--grayColor);
+
+                &:hover{
+                    background-color: var(--mobileColorGreen);
+                }
+
+                .navMobile .list-link {
+                    margin-right: auto;
+                }
+            }
+        }
+       
+
+    }
+}
+
+#sideBar-active, .closeSideBar, .openSideBar {
+    display: none;
+    visibility: hidden;
+}
+/* Mobile navBar End Here */
+
+/* Below code is used to style the section hero element */
+/* hero section start here */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 90px;
+    gap: 1.5rem;
+    font-family: 'epilogue', 'Segoe UI';
+
+    .heroWrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr ));
+        gap: 1.5rem;
+        margin-bottom: 40px;
+        font-family: 'epilogue', 'Segoe UI';
+    }
+
+    .heroContent{
+        margin-right: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+
+        h1{
+            font-size: 60px;
+            text-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        p{
+            text-wrap: wrap;
+            margin-bottom: 40px;
+            font-size: 18px;
+            text-transform: none;
+
+        }
+
+        button{
+            padding: 20px;
+            border-radius: 15px;
+            background-color: hsl(0, 0%, 8%);
+            color: hsl(0, 0%, 98%);
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            
+            &:hover{
+                color: var(--white);
+                background-color: var(--mobileColorGreen);
+                transition:  .6s;
+                transform: scale(1.2);
+            }
+            
+        }
+
+        .advert{
+            display: flex;
+            margin-top: 40px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 80px;
+           
+            img{
+                padding: 10px;
+                margin-left: 20px;
+            }
+        }
+    }
+    /* heroContent End Here */
+
+    /* Below code is used to style the heroImage */
+    /* heroImage Start Here */
+    .heroImg1{
+        width: 450px;
+        height:  150px;
+        margin-left: 120px;
+        margin-right: 40px;
+
+        img {
+            width: 350px;
+          
+        }
+    }
+    /* heroImage End Here */
+ 
+}
+/* hero section end here */
+
+
+/* BELOW CODE IS USED TO CREATE A MEDIA QUERY */
+
+@media (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+  
+    .smheroImg{
+        display: flex;
+    }
+
+    .lgheroImg{
+        display: none;
+    }
+
+    .login, .register {
+        display: none;
+  
+    }
+
+    #close-icon {
+        display: none;
+        visibility: hidden;
+    }
+
+    body{
+        background-color: hsl(0, 0%, 98%);
+        overflow-y: scroll;
+        font-family: 'epilogue', 'Segoe UI';
+        overflow-x: hidden;
+    }
+    
+
+    header {
+        background-color: hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 8%);
+        position: fixed;
+        width: 100%;
+
+        .navBar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 0 auto;
+            
+            /* &.activate {
+                display: flex;
+            } */
+
+            .list{
+                display: none;
+            }
+       
+
+            .navMobile{
+                justify-content: flex-end;
+            }
+        }
+
+
+        .registerForm{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+            overflow-y: scroll;
+
+            .form-wrapper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            
+
+                .formContent{
+                    margin-top: 120px;
+                    text-align: center;
+                    margin: 0 auto;
+
+                    h1{
+                        font-size: 3rem;
+                        text-align: center;
+                    }
+                
+                    p{
+                        text-align: center;
+                    }
+                    
+                }
+
+               
+                .formDetails .formHeader .form-bonus{
+                    padding: 50px;
+                }
+
+                form{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 98%);
+
+        .heroWrapper{
+        
+            .heroContent{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-color: hsl(0, 0%, 98%);
+                order: 1;
+                margin-top: 150px;
+
+                .content {
+
+                    h1{
+                        font-size: 30px;
+                        margin-bottom: 30px;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+                }
+
+                .advertImg{
+                    width: 100%;
+                }
+            
+            }
+        }
+    }
+    
+    .heroImg1{
+        width: 100%;
+        height:  100vh;
+        margin-bottom: 120px auto;
+        justify-content: center;
+        align-items: center;
+        order: 0;
+        padding-bottom: 40px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+
+}
+
+
+
+@media (max-width: 657px) {
+
+    .closeSideBar, .openSideBar {
+        display: block;
+       
+    }
+    
+    .navBar{
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .right-icon{
+            align-items: start;
+            justify-content: flex-start;
+        }
+    }
+
+    .registerBody{
+        background: url("../img/bg-intro-mobile.png"),hsl(0, 100%, 74%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        height: 100vh;
+    }
+    .registerForm .form-wrapper .formContent{
+        h1{
+        font-size: 3rem;
+        text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+
+    /* Below code is used to style the MobileNav */
+    .links-container{
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 200px;
+        background-color: var(--mobileColorGrayBlue);
+        box-shadow: 5px 0 5px rgba(0,0,0,0.25);
+        transition: .6s ease-out;
+
+        /* Below code is used to style the mobile Navigation */
+        .mobileMenu{
+            display: flex;
+            flex-direction: column;
+            visibility: visible;
+            font-size: 16px;
+
+
+            a{
+                box-sizing: border-box;
+                height: auto;
+                width: 100%;
+                padding: 5px 10px;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    .closeSideBar, .openSideBar {
+        display: block;
+        visibility: visible;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+
+    #sideBar-active:checked ~ .links-container{
+        right: 0;
+    }
+    #sideBar-active:checked ~ #overlay{
+        background-color: var(--white);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 8;
+    }
+}
+
+@media (max-width: 458px) {
+    .registerForm .form-wrapper .formContent{
+        h1{
+        font-size: 3rem;
+        text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+}
+
